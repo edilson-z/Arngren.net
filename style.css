@@ -1,0 +1,532 @@
+:root{
+    --snow-white: #FFFAFA;
+    --green: #9FE2BF;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--snow-white, #FFF);
+}
+h1 {
+    font-size: 2.5em;
+    color: var(--green);
+}
+p {
+    font-size: 1.2em;
+}
+.nav {
+    width: 100%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    background-color: black/*var(--snow-white, #FFF)*/;
+    opacity: 0.8;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    color: var(--green);
+    font-size: 2em;
+    z-index: 98;
+    padding-left: 5px;
+    transition: 1s ease;
+    
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.menu span{
+    color: var(--green, green);
+    width: 30px;
+    height: 4px;
+    background-color: var(--green, green);
+    margin: 2px;
+}
+aside {
+    height: 100vh;
+    width: 40vw;
+    background-color: black /*var(--snow-white, #FFF)*/;
+    color: var(--snow-white);
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+    opacity: 0.8;
+    transition: 0.4s ease;
+    transform: translateX(-100%);
+    overflow-y: scroll;
+    padding: 20px;
+}
+aside.show {
+    transform: translateX(0);
+}
+aside h1 {
+    color: var(--green);
+    font-size: 2.5em;
+}
+aside a {
+    display: block;
+    padding: 8px;
+    color: var(--snow-white) /*black*/;
+    text-decoration: none;
+    border-bottom: 1px solid var(--green);
+    font-size: 1.2em; 
+}
+aside a:hover {
+    background-color: var(--green);
+    color: black /*var(--snow-white)*/;
+}
+.image {
+    background: url("/Pictures/LUXURY-CAR.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 110vh;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: image_animate;
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+    z-index: -2;
+}
+.overlay {
+    position: absolute;
+    height: 110vh;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    animation-name: overlay_animate;
+    animation-delay: 0.5s;
+    animation-duration: 5s;
+}
+.overlay h1 {
+    color: var(--snow-white);
+    font-size: 2.2em;
+}
+.overlay p {
+    color: var(--snow-white);
+    font-size: 1.5em;
+    margin-top: -20px;
+}
+.scroll {
+    position: fixed;
+    bottom: 800px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: black url(/Pictures/up.png);
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 150;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease;
+}
+.scroll.active {
+    visibility: visible;
+    opacity: 0.8;
+    bottom: 30px;
+}
+.trending {
+    width: 100%;
+    display: flex;
+    margin: 70px 0;
+    transition: 1.5s ease;
+}
+.trending :hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+.trending-left {
+    background: url(/pictures/toyota1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.trending-center {
+    background: url(/pictures/smartwatch.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.trending-right {
+    background: url(/pictures/toyota2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.trending-left2 {
+    background: url(/pictures/nitendo\ remotes.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.trending-center2 {
+    background: url(/pictures/toyota3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.trending-right2 {
+    background: url(/pictures/Earbuds.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.separate {
+    width: 80%;
+    height: 7px;
+    background-color: #78D6A5/*green*/;
+    border-radius: 10px;
+    /*margin: 50px;*/
+}
+.new-left {
+    background: url(/pictures/toyota2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.new-center {
+    background: url(/pictures/macbook.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.new-right {
+    background: url(/pictures/headsets.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.new-left2 {
+    background: url(/pictures/drone.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.new-center2 {
+    background: url(/pictures/camera.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.new-right2 {
+    background: url(/pictures/gadgets.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.gadgets-left {
+    background: url(/pictures/drone.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.gadgets-center {
+    background: url(/pictures/large\ camera.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.gadgets-right {
+    background: url(/pictures/smartwatch.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.gadgets-left2 {
+    background: url(/pictures/Earbuds.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.gadgets-center2 {
+    background: url(/pictures/headsets.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.gadgets-right2 {
+    background: url(/pictures/gadgets.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.cars-left {
+    background: url(/pictures/LUXURY-CAR.png);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.cars-center {
+    background: url(/pictures/toyota3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.cars-right {
+    background: url(/pictures/toyota1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.cars-left2 {
+    background: url(/pictures/toyota2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.cars-center2 {
+    background: url(/pictures/1200x800.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.cars-right2 {
+    background: url(/pictures/MainImage.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    text-align: justify;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.contact {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--green);
+    color: var(--snow-white);
+    margin-top: 200px;
+    display: flex;
+}
+.contact p {
+    font-size: 1em;
+}
+.contact h2 {
+    color: black;
+    font-size: 1.5em;
+}
+.contact form {
+    width: 30%;
+    padding: 20px;
+    float: left;
+}
+.contact .input {
+    width: 50%;
+    height: 30px;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 5px;
+    color: black;
+    border: 0.5px solid grey;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.contact .textarea {
+    width: 50%;
+    height: 100px;
+    min-height: 100px;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 5px;
+    color: black;
+    border-radius: 18px;
+    opacity: 0.8;
+}
+.contact button {
+    width: 60px;
+    height: 40px;
+    background-color: black /*#9FE2E1*/;
+    color: var(--snow-white);
+    opacity: 0.8;
+    cursor: pointer;
+    border: 0.5px solid #565656;
+    border-radius: 10px;
+}
+.contact button:hover {
+    background-color: var(--snow-white);
+    color: black/*#9FE2E1*/;
+    border: 0.5px solid var(--snow-white);
+}
+.map {
+    width: 30%;
+    padding: 20px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+.contact iframe {
+    width: 70%;
+    height: 60%;
+}
+.info {
+    float: right;
+    width: 33%;
+    margin: 10px 0px;
+}
+.footer {
+    width: 100%;
+    height: 70px;
+    background-color: /*#76f7b1*/ #78D6A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 0px;
+    color:black;
+}
