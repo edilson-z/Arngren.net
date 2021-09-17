@@ -84,7 +84,7 @@ aside a:hover {
     color: black /*var(--snow-white)*/;
 }
 .image {
-    background: url("/Pictures/LUXURY-CAR.png");
+    background: url("Pictures/LUXURY-CAR.png");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -123,11 +123,11 @@ aside a:hover {
 }
 .scroll {
     position: fixed;
-    bottom: 800px;
+    bottom: 30px;
     right: 30px;
     width: 50px;
     height: 50px;
-    background: black url(/Pictures/up.png);
+    background: black url(Pictures/up.png);
     background-size: 40px;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,7 +140,6 @@ aside a:hover {
 .scroll.active {
     visibility: visible;
     opacity: 0.8;
-    bottom: 30px;
 }
 .trending {
     width: 100%;
@@ -153,7 +152,7 @@ aside a:hover {
     transform: scale(1.1);
 }
 .trending-left {
-    background: url(/pictures/toyota1.jpg);
+    background: url(pictures/toyota1.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -165,7 +164,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .trending-center {
-    background: url(/pictures/smartwatch.jpg);
+    background: url(pictures/smartwatch.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -177,7 +176,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .trending-right {
-    background: url(/pictures/toyota2.jpg);
+    background: url(pictures/toyota2.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -189,7 +188,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .trending-left2 {
-    background: url(/pictures/nitendo\ remotes.jpg);
+    background: url(pictures/nitendo\ remotes.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -201,7 +200,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .trending-center2 {
-    background: url(/pictures/toyota3.jpg);
+    background: url(pictures/toyota3.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -213,7 +212,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .trending-right2 {
-    background: url(/pictures/Earbuds.jpg);
+    background: url(pictures/Earbuds.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -232,7 +231,7 @@ aside a:hover {
     /*margin: 50px;*/
 }
 .new-left {
-    background: url(/pictures/toyota2.jpg);
+    background: url(pictures/toyota2.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -244,7 +243,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .new-center {
-    background: url(/pictures/macbook.jpg);
+    background: url(pictures/macbook.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -256,7 +255,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .new-right {
-    background: url(/pictures/headsets.jpg);
+    background: url(pictures/headsets.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -268,7 +267,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .new-left2 {
-    background: url(/pictures/drone.jpg);
+    background: url(pictures/drone.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -280,7 +279,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .new-center2 {
-    background: url(/pictures/camera.jpg);
+    background: url(pictures/camera.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -292,7 +291,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .new-right2 {
-    background: url(/pictures/gadgets.jpg);
+    background: url(pictures/gadgets.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -304,7 +303,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .gadgets-left {
-    background: url(/pictures/drone.jpg);
+    background: url(pictures/drone.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -316,7 +315,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .gadgets-center {
-    background: url(/pictures/large\ camera.jpg);
+    background: url(pictures/large\ camera.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -328,7 +327,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .gadgets-right {
-    background: url(/pictures/smartwatch.jpg);
+    background: url(pictures/smartwatch.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -340,7 +339,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .gadgets-left2 {
-    background: url(/pictures/Earbuds.jpg);
+    background: url(pictures/Earbuds.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -352,7 +351,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .gadgets-center2 {
-    background: url(/pictures/headsets.jpg);
+    background: url(pictures/headsets.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -364,7 +363,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .gadgets-right2 {
-    background: url(/pictures/gadgets.jpg);
+    background: url(pictures/gadgets.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -376,7 +375,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .cars-left {
-    background: url(/pictures/LUXURY-CAR.png);
+    background: url(pictures/LUXURY-CAR.png);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -388,7 +387,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .cars-center {
-    background: url(/pictures/toyota3.jpg);
+    background: url(pictures/toyota3.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -400,7 +399,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .cars-right {
-    background: url(/pictures/toyota1.jpg);
+    background: url(pictures/toyota1.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -412,7 +411,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .cars-left2 {
-    background: url(/pictures/toyota2.jpg);
+    background: url(pictures/toyota2.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -424,7 +423,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .cars-center2 {
-    background: url(/pictures/1200x800.jpg);
+    background: url(pictures/1200x800.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
@@ -436,7 +435,7 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .cars-right2 {
-    background: url(/pictures/MainImage.jpg);
+    background: url(pictures/MainImage.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;
