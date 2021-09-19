@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--snow-white, #FFF);
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 h1 {
     font-size: 2.5em;
@@ -142,7 +143,7 @@ aside a:hover {
     opacity: 0.8;
 }
 .trending {
-    width: 100%;
+    width: 80%;
     display: flex;
     margin: 70px 0;
     transition: 1.5s ease;
@@ -224,11 +225,11 @@ aside a:hover {
     transition: 0.5s ease;
 }
 .separate {
-    width: 80%;
+    width: 60%;
     height: 7px;
     background-color: #78D6A5/*green*/;
     border-radius: 10px;
-    /*margin: 50px;*/
+    margin: 50px;
 }
 .new-left {
     background: url(pictures/toyota2.jpg);
