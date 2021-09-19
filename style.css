@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root{
     --snow-white: #FFFAFA;
     --green: #9FE2BF;
@@ -14,6 +16,7 @@ body {
 h1 {
     font-size: 2.5em;
     color: var(--green);
+    font-family: 'Poppins', sans-serif;
 }
 p {
     font-size: 1.2em;
@@ -454,6 +457,7 @@ aside a:hover {
     color: var(--snow-white);
     margin-top: 200px;
     display: flex;
+    font-family: 'Poppins', sans-serif;
 }
 .contact p {
     font-size: 1em;
@@ -463,7 +467,7 @@ aside a:hover {
     font-size: 1.5em;
 }
 .contact form {
-    width: 30%;
+    width: 25%;
     padding: 20px;
     float: left;
 }
@@ -504,8 +508,14 @@ aside a:hover {
     color: black/*#9FE2E1*/;
     border: 0.5px solid var(--snow-white);
 }
+.info {
+    float: right;
+    width: 20%;
+    margin: 5px 0px;
+    padding: 20px;
+}
 .map {
-    width: 30%;
+    width: 50%;
     padding: 20px;
     max-height: 600px;
     margin: 0 auto;
@@ -514,11 +524,7 @@ aside a:hover {
     width: 70%;
     height: 60%;
 }
-.info {
-    float: right;
-    width: 33%;
-    margin: 10px 0px;
-}
+
 .footer {
     width: 100%;
     height: 70px;
